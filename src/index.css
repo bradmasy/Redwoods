@@ -1,0 +1,30 @@
+html {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+  margin: 0;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
+html body {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+}
+html body #root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    overflow-x: hidden;
+  }
+  html body {
+    overflow-x: hidden;
+  }
+}

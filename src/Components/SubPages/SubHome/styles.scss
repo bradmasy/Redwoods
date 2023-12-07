@@ -1,0 +1,44 @@
+    @font-face {
+        font-family: "indie";
+        src: url("../../../Assets/Fonts/Inder-Regular.ttf");
+    }
+    
+    .sub-main {
+        display: flex;
+        // border: solid green 2px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        .declaration {
+            color: white;
+            font-family: "indie";
+            #title {
+                font-size: 3em;
+                letter-spacing: 5px;
+            }
+            #description {
+                font-size: .75em;
+            }
+        }
+        .sub-content {
+            display: flex;
+            height: 80%;
+            flex-direction: column;
+            justify-content: center;
+            #strip-sizing-x {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                height: 60%;
+                width: 100%;
+                #strip-sizing-y {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 95%;
+                    border: solid white 2px;
+                }
+            }
+        }
+    }
