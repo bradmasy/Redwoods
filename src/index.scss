@@ -1,0 +1,39 @@
+html {
+    display: flex;
+    height: 100%; // Will eliminate the scroll bar
+    width: 100%;
+    // background-image: url('../src/assets/textures/paper-texture.jpg');
+    background-color:black;
+    overflow-x: hidden;
+    margin: 0;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+      
+    
+    body {
+        display: flex;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+  
+        #root {
+            display: flex;
+            height: 100%;
+            width: 100%;
+        }
+    }
+  }
+  
+  
+  @media screen and (max-width: 750px) {
+    html{
+      overflow-x: hidden;
+  
+      body{
+        overflow-x: hidden;
+      }
+  
+    }
+  }
+  
+  
