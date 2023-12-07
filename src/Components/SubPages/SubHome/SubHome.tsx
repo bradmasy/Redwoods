@@ -8,11 +8,15 @@ import pic6 from "../../../Assets/Images/band-7.jpg"
 import "./styles.css"
 
 
-const photoPaths = [
-    pic1
-]
+// const photoPaths = [
+//     pic1
+// ]
 
-export const SubHome: React.FC = () => {
+interface SubHomeProps{
+    picturePath:string
+}
+
+export const SubHome: React.FC<SubHomeProps> = ({picturePath}) => {
     return (
         <div className="sub-main">
             <div className="declaration">
@@ -24,7 +28,7 @@ export const SubHome: React.FC = () => {
             <div className="sub-content">
                 <div id="strip-sizing-x">
                     <div id="strip-sizing-y">
-                        <PhotoStrip paths={photoPaths} />
+                        <PhotoStrip path={picturePath} />
                     </div>
                 </div>
             </div>

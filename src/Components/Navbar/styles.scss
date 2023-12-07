@@ -9,21 +9,19 @@
     height: 10%;
     color: white;
     font-family: "indie";
+    padding-bottom: 1%;
     justify-content: space-between;
-
+    border-bottom: solid white 1px;
     .logo {
         display: flex;
         width: 15%;
     }
-
     .links {
         display: flex;
         width: 50%;
         justify-content: space-around;
         align-items: center;
     }
-
-    
 }
 
 @media screen and (max-width: 1200px) {

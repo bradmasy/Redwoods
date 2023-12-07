@@ -3,18 +3,17 @@ import "./styles.css"
 import React from 'react';
 
 interface PhotoStripProps {
-    paths: string[];
+    path: string;
 }
 
-export const PhotoStrip: React.FC<PhotoStripProps> = ({ paths }) => {
+export const PhotoStrip: React.FC<PhotoStripProps> = ({ path }) => {
     return (
         <div className="photo-strip">
-            {paths.map((path, index) => (
-                <div key={index} className="photo-container" style={{ backgroundImage: `url(${path})`}}>
+            <div key="photo" className="photo-container" style={{ backgroundImage: `url(${path})`}}>
                     {/* <img src={path}>
                     </img> */}
                 </div>
-            ))}
+        
         </div>
     );
 };

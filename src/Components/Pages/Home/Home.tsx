@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavBar } from "../../Navbar"
 import { VideoScreen } from "../../VideoScreen"
 import { SubHome } from "../../SubPages/SubHome";
+import pic1 from "../../../Assets/Images/band-13.jpg"
 
 import "./styles.css";
 
@@ -15,7 +16,7 @@ export const Home: React.FC = () => {
             <NavBar />
             {
                 videoComplete ?
-                    (<SubHome />) : <VideoScreen setVideoComplete={setVideoComplete} />
+                    (<SubHome picturePath={pic1} />) : <VideoScreen setVideoComplete={setVideoComplete} />
 
             }
         </div>
