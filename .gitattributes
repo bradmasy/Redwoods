@@ -1,4 +1,1 @@
-# .mp4 filter=lfs diff=lfs merge=lfs -text
-# src/Assets/Video/further-i-fall-promo.mp4 filter=lfs diff=lfs merge=lfs -text
-# src/Assets/Video/sample.mp4 filter=lfs diff=lfs merge=lfs -text
-src/Assets/Video/further-i-fall-promo.mp4 filter=lfs diff=lfs merge=lfs -text
+src/Assets/Video/Sample.mp4 filter=lfs diff=lfs merge=lfs -text

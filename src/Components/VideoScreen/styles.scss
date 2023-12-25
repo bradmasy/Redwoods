@@ -5,14 +5,16 @@
 
 .video-screen {
     display: flex;
-    height: 80%;
+    height: 90%;
     width: 100%;
-    justify-content: left;
+    justify-content: center;
+    flex-direction: column;
     .video-x {
         display: flex;
         flex-direction: row;
         justify-content: center;
         width: 100%;
+        height: 90%;
         .video-y {
             display: flex;
             flex-direction: column;
@@ -24,21 +26,11 @@
                 height: 5%;
                 width: 100%;
                 justify-content: right;
-                button {
-                    background-color: white;
-                    width: 2.5%;
-                    height: 80%;
-                    border-radius: 5px 5px 5px 5px;
-                    font-family: "indie";
-                    list-style: none;
-                    border: none;
+                .x-button-styles {
                     transition: ease-in-out .5s;
-                    font-weight: bold;
                 }
-                button:hover {
-                    background-color: darkred;
-                    width: 3%;
-                    height: 90%;
+                .x-button-styles:hover {
+                    filter: brightness(0) saturate(100%) invert(9%) sepia(91%) saturate(2271%) hue-rotate(332deg) brightness(105%) contrast(100%);
                     cursor: pointer;
                 }
             }
