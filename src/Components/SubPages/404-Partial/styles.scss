@@ -1,0 +1,15 @@
+    #missing-partial {
+        display: flex;
+        height: 100%;
+        width: 100;
+        flex-direction: column;
+        justify-content: center;
+        .declaration {
+            color: white;
+            font-family: "indie";
+            #title {
+                font-size: 3em;
+                letter-spacing: 5px;
+            }
+        }
+    }

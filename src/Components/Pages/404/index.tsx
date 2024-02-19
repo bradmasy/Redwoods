@@ -1,0 +1,1 @@
+export { FourZeroFourPage } from "./404";

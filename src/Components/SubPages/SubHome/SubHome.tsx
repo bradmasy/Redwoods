@@ -13,9 +13,11 @@ export const SubHome: React.FC = () => {
         <div className="sub-main">
             <div className="declaration">
                 <div id="title">
-                    FURTHER I FALL                </div>
+                    FURTHER I FALL                
+                </div>
                 <div id="description">
-                    COMING EARLY 2024                </div>
+                    COMING EARLY 2024                
+                </div>
             </div>
             <div className="sub-content">
                 <div id="strip-sizing-x">

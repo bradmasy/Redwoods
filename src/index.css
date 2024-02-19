@@ -20,11 +20,17 @@ html body #root {
   width: 100%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
   html {
     overflow-x: hidden;
+    margin: 0;
   }
   html body {
     overflow-x: hidden;
+    margin: 0;
+  }
+  html body #root {
+    margin: 0;
+    vertical-align: baseline;
   }
 }

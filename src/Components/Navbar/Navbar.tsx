@@ -69,12 +69,12 @@ export const NavBar: React.FC = () => {
 
             <div className="links">
 
-                <Link text={"HOME"} url={""} />
+                <Link text={"HOME"} url={"/"} />
                 <Link text={"THE BOYS"} url={"about"} />
-                <Link text={"DATES"} url={links[2].url} />
-                <Link text={"MERCH"} url={links[0].url} />
-                <Link text={"MEDIA"} url={links[1].url} />
-                <Link text={"CONTACT"} url={links[2].url} />
+                <Link text={"DATES"} url={"dates"} />
+                <Link text={"MERCH"} url={"store"} />
+                <Link text={"MEDIA"} url={"media"} />
+                <Link text={"CONTACT"} url={"contact"} />
 
             </div>
 

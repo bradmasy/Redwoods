@@ -29,3 +29,12 @@
   scale: 1.1;
   filter: brightness(0) saturate(100%) invert(9%) sepia(91%) saturate(2271%) hue-rotate(332deg) brightness(105%) contrast(100%);
 }
+
+@media screen and (max-width: 1000px) {
+  .social-icon .social-icon-container {
+    height: 50%;
+  }
+  .social-icon .social-icon-container .social-icon-alignment {
+    width: 45%;
+  }
+}

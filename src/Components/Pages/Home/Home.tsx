@@ -4,6 +4,7 @@ import { VideoScreen } from "../../VideoScreen"
 import { SubHome } from "../../SubPages/SubHome";
 
 import "./styles.css";
+import { MobileNavBar } from "../../Mobile-Navbar";
 
 
 export const Home: React.FC = () => {
@@ -12,6 +13,7 @@ export const Home: React.FC = () => {
 
     return (
         <div id="home">
+            <MobileNavBar/> 
             <NavBar />
             {
                 videoComplete ?

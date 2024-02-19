@@ -6,18 +6,17 @@ interface LinkProps {
     url: string;
 }
 
-const Navigate = async (url: string) => {
-    const request = await axios.get(`/${url}`).then((response) => {
-        console.log(response.data)
-    }).catch((error) => {
-        console.log(error)
-    })
+const Navigate = (url: string) => {
+    console.log(url)
+    window.location.href = url;
+
 }
 
 export const Link: React.FC<LinkProps> = (props) => {
     return (
         <div className="link" onClick={
-            () => Navigate(props.url)
+            () =>
+                Navigate(props.url)
         }>
             <div className="text-section">
                 {props.text}

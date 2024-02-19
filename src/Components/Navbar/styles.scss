@@ -28,9 +28,10 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
+    // if mobile is 1000px or less this will happen.
     .navbar {
-        display: flex;
+        display: none;
         width: 100%;
         height: 5%;
         // border: solid white 1px;
