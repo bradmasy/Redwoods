@@ -10,6 +10,7 @@ import spotify from "../../Assets/Icons/spotify.png";
 import facebook from "../../Assets/Icons/facebook.png";
 import twitter from "../../Assets/Icons/twitter.png";
 import appleMusic from "../../Assets/Icons/apple-music.png";
+import { useEffect, useState } from "react";
 
 
 const socialNavProps = {
@@ -41,28 +42,39 @@ const socialNavProps = {
 
     ]
 }
-export const MobileNavBar: React.FC = () => {
+
+interface MobileNavProps {
+    mobileState: boolean
+    setMobileState: React.Dispatch<React.SetStateAction<boolean>>;
+    setFade: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const MobileNavBar: React.FC<MobileNavProps> = ({ setMobileState, mobileState }) => {
+    const [fade, setFade] = useState(false);
+
+
+
+    const openMobileMenu = () => {
+        !mobileState ? setMobileState(true) : setMobileState(false);
+        !mobileState ? setFade(false) : setFade(true);
+    }
+
     return (
 
         <div className="mobile-nav-bar">
             <div className="mobile-menu-container">
                 <div id="hamburger-menu">
-                    <div id="hamburger-container">
+                    <div id="hamburger-container" onClick={openMobileMenu}>
                         <div id="img-container">
                             <img src={hamburgerMenu}>
                             </img>
                         </div>
                         <div id="social-nav-container">
                             <div id="social-nav-alignment">
-                            <SocialNav {...socialNavProps} />
-
+                                <SocialNav {...socialNavProps} />
                             </div>
-
                         </div>
-
                     </div>
-
-
                 </div>
                 <div className="mobile-logo">
                     <div id="logo-container">

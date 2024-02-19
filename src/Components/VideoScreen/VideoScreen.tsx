@@ -19,10 +19,10 @@ export const VideoScreen: React.FC<VideoScreenProps> = ({ setVideoComplete }) =>
         videoScreen?.classList.add("fade-out")
 
         // this is where the fade transition should happen but its not triggering
-        setTimeout(()=>{
+        setTimeout(() => {
             document.getElementById("promo-video")?.classList.add("fade-out");
             setVideoComplete(true);
-        },1000);
+        }, 1000);
     };
 
 

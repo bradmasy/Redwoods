@@ -1,0 +1,49 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.rw-mobile-menu {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 100%;
+  width: 100%;
+  font-family: "main";
+  align-items: center;
+  opacity: 0; /* Start with opacity set to 0 */
+  animation: fadeIn 1.5s ease forwards; /* Apply the fadeIn animation */
+}
+.rw-mobile-menu .rw-mobile-menu__menu-item-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 8px 8px 8px 8px;
+}
+.rw-mobile-menu .rw-mobile-menu__menu-item-container .rw-mobile-menu__menu-option {
+  display: flex;
+  border: solid white 1px;
+  width: 90%;
+  justify-content: center;
+  height: 10%;
+  align-items: center;
+  font-family: "indie";
+  transition: 0.5s ease-in-out;
+  border-radius: 8px 8px 8px 8px;
+}
+.rw-mobile-menu .rw-mobile-menu__menu-item-container .rw-mobile-menu__menu-option a {
+  text-decoration: none;
+  color: white;
+}
+.rw-mobile-menu .rw-mobile-menu__menu-item-container .rw-mobile-menu__menu-option:hover {
+  cursor: pointer;
+  scale: 1.05;
+  filter: brightness(0) saturate(100%) invert(9%) sepia(91%) saturate(2271%) hue-rotate(332deg) brightness(105%) contrast(100%);
+}

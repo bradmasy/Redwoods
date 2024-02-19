@@ -2,12 +2,33 @@
   font-family: "indie";
   src: url("../../../Assets/Fonts/Inder-Regular.ttf");
 }
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-out {
+  animation: fadeOut 2.5s ease forwards;
+}
+
 .sub-main {
   display: flex;
   width: 100%;
   height: 100%;
   flex-direction: column;
   justify-content: center;
+  animation: 1.5s fadeIn ease forwards; /* Apply the fadeIn animation */
 }
 .sub-main .declaration {
   color: white;

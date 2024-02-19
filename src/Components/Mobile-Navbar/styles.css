@@ -26,7 +26,7 @@
   }
   .mobile-nav-bar .mobile-menu-container #hamburger-menu #hamburger-container {
     display: flex;
-    height: 65%;
+    height: 50%;
     width: 100%;
     justify-content: space-around;
   }
